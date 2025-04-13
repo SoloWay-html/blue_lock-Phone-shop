@@ -1,0 +1,81 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Контейнер */
+.container {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Заголовок */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Поля ввода */
+.inputBox {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #007bff;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+}
+
+.inputBox label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #777;
+    transition: 0.3s;
+}
+
+/* Эффект при вводе текста */
+.inputBox input:focus ~ label,
+.inputBox input:valid ~ label {
+    top: 0;
+    left: 5px;
+    font-size: 12px;
+    color: #007bff;
+}
+
+/* Кнопка */
+.btn {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
